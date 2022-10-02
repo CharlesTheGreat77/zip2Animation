@@ -20,7 +20,7 @@ def main():
     print('[*] Changing file names\n')
     index = renamer(output, listOfiles)
     print('[#] Creating basic meta file..\n')
-    metaCreate(index, output)
+    metaCreate(index, output, width, height)
     print('[$] Done')
 
 def extract(file, output):
@@ -39,12 +39,12 @@ def renamer(output, listOfiles):
         index += 1
     return index
         
-def metaCreate(index, output):
+def metaCreate(index, output, width, height):
     order = []
     for num in range(0, index):
         order.append(num)
 
-    metaText = f"Filetype: Flipper Animation\nVersion: 1\nPassive frames: {index - 2}\nActive frames: 1\nFrames order: {' '.join(str(num) for num in order)}\nActive cycles: 1\nFrame rate: 5\nDuration: 3600\nActive cooldown: 7\n\nBubble slots: 0"
+    metaText = f"Filetype: Flipper Animation\nVersion: 1\nWidth: {widgth}\nHeight: {height}\nPassive frames: {index - 2}\nActive frames: 1\nFrames order: {' '.join(str(num) for num in order)}\nActive cycles: 1\nFrame rate: 5\nDuration: 3600\nActive cooldown: 7\n\nBubble slots: 0"
 
     with open(f'{output}/meta.txt', 'w') as f:
         f.write(f'{metaText}')
