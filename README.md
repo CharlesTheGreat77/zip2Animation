@@ -30,7 +30,7 @@ options:
 
 # Default Example (128x64)
 ```
-python3 png2Animation.py -z Mario.zip -o Mario
+python3 zip2Animation.py -z Mario.zip -o Mario
 ```
 * This will rename the frames as frames_0.. etc. and create a basic meta.txt file
   that will play the animation (as normal).
@@ -41,7 +41,7 @@ python3 png2Animation.py -z Mario.zip -o Mario
 
 # Custom Width Height Example
 ```
-python3 png2Animation.py -z Mario.zip -o Mario -w 97 -ht 61
+python3 zip2Animation.py -z Mario.zip -o Mario -w 97 -ht 61
 ```
 * This will automatically change the width and height in the meta file. 
 
