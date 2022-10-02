@@ -1,6 +1,11 @@
 # zip2Animation
 Utility to assist in creating flipper zero animations.
 
+* Description
+ - renames the png files in order from a zip file. 
+ - Creates a basic meta file with a straight forward animation frame order
+ - added "width/height" argument to declare it in meta file
+
 # PREREQUISITES
 ```
 Python3
