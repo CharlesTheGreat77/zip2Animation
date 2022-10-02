@@ -44,7 +44,7 @@ def metaCreate(index, output, width, height):
     for num in range(0, index):
         order.append(num)
 
-    metaText = f"Filetype: Flipper Animation\nVersion: 1\nWidth: {width}\nHeight: {height}\nPassive frames: {index - 2}\nActive frames: 1\nFrames order: {' '.join(str(num) for num in order)}\nActive cycles: 1\nFrame rate: 5\nDuration: 3600\nActive cooldown: 7\n\nBubble slots: 0"
+    metaText = f"Filetype: Flipper Animation\nVersion: 1\nWidth: {width}\nHeight: {height}\nPassive frames: {index - 1}\nActive frames: 1\nFrames order: {' '.join(str(num) for num in order)}\nActive cycles: 1\nFrame rate: 5\nDuration: 3600\nActive cooldown: 7\n\nBubble slots: 0"
 
     with open(f'{output}/meta.txt', 'w') as f:
         f.write(f'{metaText}')
