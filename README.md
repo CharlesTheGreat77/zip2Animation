@@ -41,7 +41,12 @@ python3 zip2Animation.py -z Mario.zip -o Mario
 • Key note
  - the width default is 128, and the height default is 64. 
  - Specify the width and height of your animation otherwise. 
-
+# Multiple Zip files
+```
+python3 zip2Animation.py -d Animations/
+```
+ - Unzips all files, renames all frames in each file, creates basic meta file for each folder. 
+ - Folders are named the same as each zip file name. 
 # Custom Width Height Example
 ```
 python3 zip2Animation.py -z Mario.zip -o Mario -w 97 -ht 61
