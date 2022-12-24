@@ -47,6 +47,7 @@ python3 zip2Animation.py -d Animations/
 ```
  - Unzips all files, renames all frames in each file, creates basic meta file for each folder. 
  - Folders are named the same as each zip file name. 
+
 • Key Note
  - Be sure every file in the directory is a ZIP file.. I'm lazy..
 # Custom Width Height Example
