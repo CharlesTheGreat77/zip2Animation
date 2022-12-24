@@ -1,5 +1,5 @@
 from zipfile import ZipFile
-import argparse, time, os, re
+import argparse, time, os
 
 def main():
     parser = argparse.ArgumentParser(description='Change png file names to match flippers frame file naming convention', usage='python3 zip2Animations.py [options]')
