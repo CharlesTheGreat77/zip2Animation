@@ -18,6 +18,9 @@ options:
   -h, --help           show this help
                        message and exit
   -z ZIP, --zip ZIP    specify zip file
+  -d DIRECTORY, --directory DIRECTORY
+                       specify the directory 
+                       for multiple zip files
   -o OUTPUT, --output OUTPUT
                        specify output file
   -w WIDTH, --width WIDTH
