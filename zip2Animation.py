@@ -20,30 +20,34 @@ def main():
         print(parser.usage)
     
     if directory != None:
-        listOfZips, fileNames = unzipAll(directory)
+        print("[*] Iterating through all zips.. \n")
+        listOfZips = unzipAll(directory)
+        print("[*] Iterating through files & Renaming frames.. \n")
         for file in listOfZips:
             output = file.replace('.zip', '')
             listOfiles = extract(file, output)
             index = renamer(output, listOfiles)
             metaCreate(index, output, width, height)
     else:
+        print("[*] Extracting File Names.. \n")
         listOfiles = extract(file, output)
+        print("[*] Renaming Each Frame.. \n")
         index = renamer(output, listOfiles)
         metaCreate(index, output, width, height)
+    
+    print("[*] All Done with meta file(s) created.. and noice animation ;)")
         
         
 def unzipAll(directory):
-    print("[*] Iterating through all zips.. \n")
     listOfZips = []
     fileNames = []
     for root, dirs, files in os.walk(directory):
         for filename in files:
             listOfZips.append(os.path.join(root, filename))
-            fileNames.append(os.path.join(filename))
-    return listOfZips, fileNames
+            
+    return listOfZips
 
 def extract(file, output):
-    print("[*] Extracting File Names.. \n")
     try:
         zip = ZipFile(file)
     except Exception as e:
@@ -55,7 +59,6 @@ def extract(file, output):
 
 
 def renamer(output, listOfiles):
-    print("[*] Renaming Each Frame.. \n")
     index = 0
     for fileName in listOfiles:
             source = output + '/' + fileName
@@ -65,7 +68,6 @@ def renamer(output, listOfiles):
     return index
 
 def metaCreate(index, output, width, height):
-    print("[*] Creating a basic meta file.. \n")
     order = []
     for num in range(0, index):
         order.append(num)
