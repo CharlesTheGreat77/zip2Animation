@@ -60,6 +60,13 @@ python3 zip2Animation.py -z Mario.zip -o Mario -w 97 -ht 61
 Talking Sasquach
 https://github.com/skizzophrenic/Talking-Sasquach
  - thank him for the addition of allowing multiple zip files to be processed
+
+# Extra
+BADUSB Repo https://github.com/CharlesTheGreat77/BADUSB
+
+# Token Grabber for BADUSB
+https://github.com/CharlesTheGreat77/token2Discord
+
 ### 💬 Contact Me 
 
 ![Gmail Badge](https://img.shields.io/badge/-doobthegoober@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white)
