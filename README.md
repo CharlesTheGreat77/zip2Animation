@@ -62,9 +62,10 @@ https://github.com/skizzophrenic/Talking-Sasquach
  - thank him for the addition of allowing multiple zip files to be processed
 
 # Extra
-BADUSB Repo https://github.com/CharlesTheGreat77/BADUSB
+BADUSB Repo
+https://github.com/CharlesTheGreat77/BADUSB
 
-# Token Grabber for BADUSB
+Token Grabber for BADUSB
 https://github.com/CharlesTheGreat77/token2Discord
 
 ### 💬 Contact Me 
