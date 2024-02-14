@@ -110,7 +110,6 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser(description="Change png file names to match flippers frame file naming convention", usage="python3 zip2Animations.py -h, --help")
     parser.add_argument("-z", "--zip", help="specify zip file", type=str, required=False)
     parser.add_argument("-d", "--directory", help="specify the directory for multiple zips files", required=False)
-    parser.add_argument("-o", "--output", help="specify output file", required=False, action="store_true")
     parser.add_argument("-w", "--width", help="specify width of animation", type=int, default=128)
     parser.add_argument("-ht", "--height", help="specify height of animation", type=int, default=64)
     parser.add_argument("-fbt", "--fbt", help="specify flipper zero directory to auto. compile", type=str, required=False)
