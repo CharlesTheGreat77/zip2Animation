@@ -93,9 +93,9 @@ def update_manifest(fbt_path: str, output_folder_name: str) -> None:
 Name: {output_folder_name}
 Min butthurt: 0
 Max butthurt: 10
-Min level: 3
+Min level: 1
 Max level: 3
-Weight: 4
+Weight: 3
 """
     manifest_path = os.path.join(fbt_path, "assets", "dolphin", "external", "manifest.txt")
     with open(manifest_path, "r+") as meta_file:
