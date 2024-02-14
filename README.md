@@ -23,7 +23,6 @@ options:
   -z ZIP, --zip ZIP     specify zip file
   -d DIRECTORY, --directory DIRECTORY
                         specify the directory for multiple zips files
-  -o, --output          specify output file
   -w WIDTH, --width WIDTH
                         specify width of animation
   -ht HEIGHT, --height HEIGHT
@@ -38,7 +37,7 @@ python3 zip2Animation.py -d .\Animations\ -fbt D:\Flipper\flipperzero-firmware\
   --fbt and specify the path to flipper firmware
 # Default Example (128x64)
 ```
-python3 zip2Animation.py -z Mario.zip -o Mario
+python3 zip2Animation.py -z Mario.zip
 ```
 * This will rename the frames as frames_0.. etc. and create a basic meta.txt file
   that will play the animation (as normal).
@@ -57,7 +56,7 @@ python3 zip2Animation.py -d .\Animations\
  - Be sure every file in the directory is a ZIP file.. I'm lazy..
 # Custom Width Height Example
 ```
-python3 zip2Animation.py -z Mario.zip -o Mario -w 97 -ht 61
+python3 zip2Animation.py -z Mario.zip -w 97 -ht 61
 ```
 * This will automatically change the width and height in the meta file. 
 
