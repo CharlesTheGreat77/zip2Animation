@@ -14,23 +14,28 @@ Zip file with your png frames
 
 # USAGE
 ```
-options:
-  -h, --help           show this help
-                       message and exit
-  -z ZIP, --zip ZIP    specify zip file
-  -d DIRECTORY, --directory DIRECTORY
-                       specify the directory 
-                       for multiple zip files
-  -o OUTPUT, --output OUTPUT
-                       specify output file
-  -w WIDTH, --width WIDTH
-                       specify width of
-                       animation
-  -ht HEIGHT, --height HEIGHT
-                       specify height of
-                       animation
-```
+usage: python3 zip2Animations.py -h, --help
 
+Change png file names to match flippers frame file naming convention
+
+options:
+  -h, --help            show this help message and exit
+  -z ZIP, --zip ZIP     specify zip file
+  -d DIRECTORY, --directory DIRECTORY
+                        specify the directory for multiple zips files
+  -o, --output          specify output file
+  -w WIDTH, --width WIDTH
+                        specify width of animation
+  -ht HEIGHT, --height HEIGHT
+                        specify height of animation
+  -fbt FBT, --fbt FBT   specify flipper zero directory to auto. compile
+```
+# Auto compile a directory of zips
+```
+python3 zip2Animation.py -d .\Animations\ -fbt D:\Flipper\flipperzero-firmware\
+```
+* This will automatically rename frames for each zip, create a meta file for each, and auto compile.
+  --fbt and specify the path to flipper firmware
 # Default Example (128x64)
 ```
 python3 zip2Animation.py -z Mario.zip -o Mario
@@ -43,7 +48,7 @@ python3 zip2Animation.py -z Mario.zip -o Mario
  - Specify the width and height of your animation otherwise. 
 # Multiple Zip files
 ```
-python3 zip2Animation.py -d Animations/
+python3 zip2Animation.py -d .\Animations\
 ```
  - Unzips all files, renames all frames in each file, creates basic meta file for each folder. 
  - Folders are named the same as each zip file name. 
